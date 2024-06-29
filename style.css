@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F9EB1D;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #F8AD12;
+    color: white;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    color: #E62D88;
+}
+
+header button {
+    background-color: white;
+    border: none;
+    color: #D80B32;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header button:hover {
+    background-color: #f0f0f0;
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    width: 100px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+video, canvas {
+    width: 640px;
+    height: 480px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #E62D88;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #D80B32;
+}
+
+#captures {
+    margin-top: 2em;
+    width: 80%;
+    text-align: center;
+}
+
+#captures h2 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: #E62D88;
+}
+
+#capture-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#capture-container img {
+    margin: 0.5em;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.night-mode {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.night-mode header {
+    background-color: #1abc9c;
+}
+
+.night-mode header button {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.night-mode header button:hover {
+    background-color: #16a085;
+}
+
+.night-mode button {
+    background-color: #1abc9c;
+}
+
+.night-mode button:hover {
+    background-color: #16a085;
+}
+
+.night-mode video, .night-mode canvas {
+    border-color: #34495e;
+}
+
+.night-mode #capture-container img {
+    border-color: #34495e;
+}

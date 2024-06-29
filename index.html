@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détection d'Objets en Temps Réel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="/assets/logo_sieli.png" alt="Logo Sieli" id="logo">
+        <h1>Détection d'Objets en Temps Réel</h1>
+        <button id="theme-toggle">Basculer en Mode Nuit</button>
+    </header>
+    <main>
+        <video id="video" autoplay></video>
+        <canvas id="canvas"></canvas>
+        <button id="capture">Capturer l'Image</button>
+    </main>
+    <section id="captures">
+        <h2>Images Capturées</h2>
+        <div id="capture-container"></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="script.js"></script>
+    <script src="db.js"></script>
+</body>
+</html>
